@@ -1,0 +1,48 @@
+/** { border: 1px solid red; }*/
+
+.Landing {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Landing-organisations {
+  max-width: 90%;
+  padding-left: 50px;
+}
+
+.Landing-register-button {
+  padding-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Landing-footer {
+  background-color: #F8F9FA;
+  color: #575757;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  height: 4vh;
+}
+
+.Landing-header {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+.Landing-register-button {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-right: 10%;
+}
+
+.Landing-button {
+  position: fixed;
+  margin-top: 5px;
+  right: 10%;
+}

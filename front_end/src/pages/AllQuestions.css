@@ -1,0 +1,43 @@
+.all-questions {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+}
+
+.questions-page {
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-tab{
+    max-width: 90%;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.tab-content{
+    max-width: 100%;
+    margin-left: 30px;
+    padding-right: 200px;
+}
+
+.date-range{
+    display: flex;
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+
+.download-button{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.question-tabs{
+    padding-left: 25px;
+}

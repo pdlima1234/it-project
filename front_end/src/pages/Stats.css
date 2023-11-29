@@ -1,0 +1,51 @@
+.stats {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.stats-header {
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.category {
+    text-align: left;
+    padding-left: 60px;
+    padding-bottom: 25px;
+    padding-top: 50px;
+}
+
+.mb-3 {
+    margin-left: 60px;
+}
+
+.custom-tab .nav-link {
+    color: #da1a32; 
+  }
+
+.custom-tab .nav-link:hover {
+    color: #ffffff; 
+    background-color: #da1a32;
+}
+
+.custom-tab .nav-link.active{
+    color: #ffffff;
+    background-color: #da1a32;
+}
+
+.View-questions{
+    padding-top: 110px;
+}
+
+.date-range{
+    display: flex;
+    margin-left: 20px;
+}
+
+.question{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

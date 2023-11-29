@@ -1,0 +1,27 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+.org-chart {
+  height: 350px;
+  width: 600px; 
+  font-size: medium;
+  font-weight: bolder;
+  margin-right: auto;
+}
+
+.num-volunteers {
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+.display {
+  padding-left: 0px;
+}
+
+.push-left {
+  text-align: left;
+  padding-left: 60px;
+}

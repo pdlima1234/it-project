@@ -1,0 +1,66 @@
+### sample GET request
+GET http://localhost:3001/admins/organisations
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImRlbGlqYWhAdW5pbWVsYi5jb20iLCJpYXQiOjE2OTY1MTgzNTl9.cebz2h6jZWcGWqlnFrdbC4QH7LHb-VpPoMDH_I0BoZg
+
+###
+
+GET http://localhost:8080/organisations/answers/650532cbab7fca80c7a56cd1
+### Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Im9kaWNrc29uQHZvbHVudGVlcmluZ3ZpY3RvcmlhLmNvbSIsImlhdCI6MTY5Njk4NzA2OX0.dT0xDt20vbgQ25xZWYeHGrkkWSJCRsNn48UjxiyB8Ss
+
+### sample POST request for log in
+POST /admins/login HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "Email": "eharmony@outlook.com",
+    "Password": "pass"
+}
+
+### sample for log in
+POST /survey_submissions/submit HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "Volunteer": "6505325cab7fca80c7a56cd0",
+    "QuestionSet": "650536fd099b3e6604f3ce6d",
+    "Answers": ["1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3","1", "3"],
+    "Iteration": 1
+}
+
+### another sample
+GET http://localhost:8080/survey_submissions/question_model_id/Service survey
+
+### sample for log in
+POST /volunteers/register HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Im9kaWNrc29uQHZvbHVudGVlcmluZ3ZpY3RvcmlhLmNvbSIsImlhdCI6MTY5Njk4NzA2OX0.dT0xDt20vbgQ25xZWYeHGrkkWSJCRsNn48UjxiyB8Ss
+
+{
+    "Email": "test@volunteeringvictoria.com",
+    "Name": "Liam Bong",
+    "Organisations": ["650532cbab7fca80c7a56cd1"]
+}
+
+### sample for deleting
+POST /volunteers/delete HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Im9kaWNrc29uQHZvbHVudGVlcmluZ3ZpY3RvcmlhLmNvbSIsImlhdCI6MTY5Njk4NzA2OX0.dT0xDt20vbgQ25xZWYeHGrkkWSJCRsNn48UjxiyB8Ss
+
+{
+    "Email": "shrimantkohli@gmail.com"
+}
+
+### test
+
+POST /volunteers/changepass HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "Email": "lbong@outlook.com",
+    "Password": "pass"
+}

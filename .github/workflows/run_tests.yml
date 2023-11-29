@@ -1,0 +1,23 @@
+name: Testing CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm i && cd back_end && npm i
+    - run: cd back_end && touch .env && echo "BACK_END_LISTENING_PORT=${{ secrets.BACK_END_LISTENING_PORT }}" > .env && echo "SECRET=${{ secrets.SECRET }}" >> .env && echo "DATABASE_URL=${{secrets.DATABASE_URL }}" >> .env
+    - run: npm test
